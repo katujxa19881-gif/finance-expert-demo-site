@@ -203,6 +203,13 @@
 
     /* 8. Прайс */
     .kt-pricing { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+    .kt-pricing-subtitle {
+      margin: 0 0 1.2rem;
+      font-size: 1.25rem;
+      color: var(--text-light);
+      font-weight: 700;
+    }
+    .kt-pricing-subtitle.secondary { margin-top: 2.8rem; }
     .kt-price-card { background: var(--bg-panel); border: 1px solid var(--border); border-radius: 24px; padding: 3rem; display: flex; flex-direction: column; }
     .kt-price-card.featured { border-color: var(--accent); box-shadow: 0 10px 30px rgba(0, 230, 118, 0.1); position: relative;}
     .kt-price-val { font-size: 2.2rem; font-weight: 800; color: var(--text-light); margin: 1rem 0 2rem; }
@@ -438,6 +445,7 @@
   <!-- ЭКРАН 8: Прайс -->
   <section id="pricing" class="kt-section">
     <h2>Стоимость услуг</h2>
+    <h3 class="kt-pricing-subtitle">Основные тарифы</h3>
     <div class="kt-pricing">
       
       <div class="kt-price-card">
@@ -476,6 +484,45 @@
         <a href="https://t.me/Ka_terina8" target="_blank" class="kt-btn kt-btn-outline">Выбрать</a>
       </div>
 
+    </div>
+
+    <h3 class="kt-pricing-subtitle secondary">Дополнительные услуги</h3>
+    <div class="kt-pricing">
+      <div class="kt-price-card">
+        <h3>разовая консультация</h3>
+        <p>аудит текущей таблицы, поиск ошибок в формулах, рекомендации по архитектуре учета.</p>
+        <div class="kt-price-val">15 000 ₽</div>
+        <ul style="flex-grow: 1;">
+          <li>видеозвонок 1,5 часа</li>
+          <li>ответы на ваши вопросы</li>
+          <li>запись встречи</li>
+        </ul>
+        <a href="https://t.me/Ka_terina8" target="_blank" class="kt-btn kt-btn-outline">Выбрать</a>
+      </div>
+
+      <div class="kt-price-card">
+        <h3>индивидуальный проект под ключ</h3>
+        <p>для сложных кейсов: архитектура учета, автоматизация и дашборд под вашу компанию.</p>
+        <div class="kt-price-val">от 100 000 ₽</div>
+        <ul style="flex-grow: 1;">
+          <li>переход на плоские таблицы</li>
+          <li>автоматизация выгрузок и отчетности</li>
+          <li>обучение сотрудника и передача решения</li>
+        </ul>
+        <a href="https://t.me/Ka_terina8" target="_blank" class="kt-btn kt-btn-outline">Обсудить проект</a>
+      </div>
+
+      <div class="kt-price-card">
+        <h3>корпоративное обучение</h3>
+        <p>практический формат по внедрению нейросетей и автоматизации для вашего финансового блока.</p>
+        <div class="kt-price-val">по запросу</div>
+        <ul style="flex-grow: 1;">
+          <li>адаптация под процессы вашей команды</li>
+          <li>готовые промпты и шаблоны для отдела</li>
+          <li>сопровождение 1 месяц</li>
+        </ul>
+        <a href="https://t.me/Ka_terina8" target="_blank" class="kt-btn kt-btn-outline">Написать</a>
+      </div>
     </div>
   </section>
 
